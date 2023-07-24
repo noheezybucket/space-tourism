@@ -1,0 +1,75 @@
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+  background-size: cover;
+}
+
+.homebox {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.so {
+  font-weight: 500;
+  font-size: 1.5em;
+  font-family: "Barlow Condensed";
+  letter-spacing: 3px;
+}
+
+.space {
+  font-family: "Bellefair";
+  font-size: 10em;
+}
+
+.explore {
+  font-family: "Bellefair";
+  color: #0c0e18;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+}
+
+.explore::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  transition: ease-in-out 0.5s;
+}
+
+.explore:hover::after {
+  background-color: hsla(0, 100%, 100%, 0.5);
+  width: 400px;
+  height: 400px;
+}
+
+.homebox--one {
+  width: 50%;
+}
+
+.homebox--two {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.homebox--text {
+  font-size: 1.2em;
+  line-height: 2em;
+}

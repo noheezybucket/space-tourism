@@ -1,0 +1,80 @@
+.destination {
+  padding: 160px 0;
+  background: url("../assets/destination/background-destination-desktop.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.destinationbox {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.planet {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes rotateplanet {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.planet-image {
+  animation: 30s rotateplanet linear infinite;
+}
+
+.planet-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.planet-tabs {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.planet-tab {
+  font-family: "Barlow Condensed";
+}
+
+.planet-tab:first-child {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+
+.planet-name {
+  font-family: "Bellefair";
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+.planet-desc {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.planet-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.avg,
+.est {
+  font-family: "Barlow Condensed";
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+
+.stats {
+  font-size: 2em;
+  font-family: "Bellefair";
+}

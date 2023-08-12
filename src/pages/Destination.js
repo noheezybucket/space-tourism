@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Destination.css";
-import planet from "../assets/destination/image-mars.png";
+import data from "../data/data.js";
 
 const Destination = () => {
+  const [toggle, setToggle] = useState(0);
+  const destinations = data.destinations;
+
+  console.log(data);
+
   return (
     <div className="destination">
       <div className="destinationbox">
@@ -12,32 +17,55 @@ const Destination = () => {
 
         <div className="planet">
           <div className="planet-image">
-            <img src={planet} alt="" />
+            <img src={destinations[toggle]["images"]["png"]} alt="planet" />
           </div>
           <div className="planet-details">
             <div className="planet-tabs">
-              <p className="planet-tab">Moon</p>
-              <p className="planet-tab">Mars</p>
-              <p className="planet-tab">Europa</p>
-              <p className="planet-tab">Titan</p>
+              <p
+                className={`planet-tab ${toggle === 0 ? "active" : ""}`}
+                onClick={() => {
+                  setToggle(0);
+                }}
+              >
+                Moon
+              </p>
+              <p
+                className={`planet-tab ${toggle === 1 ? "active" : ""}`}
+                onClick={() => {
+                  setToggle(1);
+                }}
+              >
+                Mars
+              </p>
+              <p
+                className={`planet-tab ${toggle === 2 ? "active" : ""}`}
+                onClick={() => {
+                  setToggle(2);
+                }}
+              >
+                Europa
+              </p>
+              <p
+                className={`planet-tab ${toggle === 3 ? "active" : ""}`}
+                onClick={() => {
+                  setToggle(3);
+                }}
+              >
+                Titan
+              </p>
             </div>
-            <p className="planet-name">Moon</p>
-            <p className="planet-desc">
-              See our planet as you’ve never seen it before. A perfect relaxing
-              trip away to help regain perspective and come back refreshed.
-              While you’re there, take in some history by visiting the Luna 2
-              and Apollo 11 landing sites.
-            </p>
+            <p className="planet-name">{destinations[toggle]["name"]}</p>
+            <p className="planet-desc">{destinations[toggle]["description"]}</p>
             <hr />
             <div className="planet-stats">
               <div>
                 <p className="avg">AVG.DISTANCE</p>
-                <p className="stats">309,222 KM</p>
+                <p className="stats">{destinations[toggle]["distance"]}</p>
               </div>
 
               <div>
                 <p className="est">EST.TRAVEL TIME</p>
-                <p className="stats">3 DAYS</p>
+                <p className="stats">{destinations[toggle]["travel"]}</p>
               </div>
             </div>
           </div>

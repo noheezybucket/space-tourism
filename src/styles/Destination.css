@@ -1,5 +1,5 @@
 .destination {
-  padding: 160px 0;
+  padding: 130px 0;
   background: url("../assets/destination/background-destination-desktop.jpg")
     no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .planet-image {
-  animation: 30s rotateplanet linear infinite;
+  animation: 60s rotateplanet linear infinite;
 }
 
 .planet-details {
@@ -35,17 +35,25 @@
 
 .planet-tabs {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 3px;
+  max-width: 320px;
+  height: 30px;
 }
 
 .planet-tab {
   font-family: "Barlow Condensed";
+  cursor: pointer;
 }
 
-.planet-tab:first-child {
+.planet-tab:hover {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+
+.planet-tab.active {
   font-weight: 700;
   border-bottom: 2px solid white;
 }
@@ -64,7 +72,8 @@
 .planet-stats {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: fit-content;
+  gap: 40px;
 }
 
 .avg,
@@ -77,4 +86,5 @@
 .stats {
   font-size: 2em;
   font-family: "Bellefair";
+  text-transform: uppercase;
 }

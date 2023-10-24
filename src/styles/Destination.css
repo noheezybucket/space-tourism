@@ -1,8 +1,10 @@
 .destination {
   padding: 130px 0;
+  height: 100vh;
   background: url("../assets/destination/background-destination-desktop.jpg")
     no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 
 .destinationbox {

@@ -3,6 +3,11 @@ import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
 
+import douglas from "../assets/crew/image-douglas-hurley.png";
+import mark from "../assets/crew/image-mark-shuttleworth.png";
+import victor from "../assets/crew/image-victor-glover.png";
+import anousheh from "../assets/crew/image-anousheh-ansari.png";
+
 const data = {
   destinations: [
     {
@@ -54,7 +59,7 @@ const data = {
     {
       name: "Douglas Hurley",
       images: {
-        png: "./public/crew/image-douglas-hurley.png",
+        png: douglas,
         webp: "./public/crew/image-douglas-hurley.webp",
       },
       role: "Commander",
@@ -63,7 +68,7 @@ const data = {
     {
       name: "Mark Shuttleworth",
       images: {
-        png: "./public/crew/image-mark-shuttleworth.png",
+        png: mark,
         webp: "./public/crew/image-mark-shuttleworth.webp",
       },
       role: "Mission Specialist",
@@ -72,7 +77,7 @@ const data = {
     {
       name: "Victor Glover",
       images: {
-        png: "./public/crew/image-victor-glover.png",
+        png: victor,
         webp: "./public/crew/image-victor-glover.webp",
       },
       role: "Pilot",
@@ -81,7 +86,7 @@ const data = {
     {
       name: "Anousheh Ansari",
       images: {
-        png: "./public/crew/image-anousheh-ansari.png",
+        png: anousheh,
         webp: "./public/crew/image-anousheh-ansari.webp",
       },
       role: "Flight Engineer",

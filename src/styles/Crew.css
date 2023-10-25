@@ -1,0 +1,74 @@
+.crew {
+  padding: 130px 0;
+  height: 100vh;
+  background: url("../assets/crew/background-crew-desktop.jpg") no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.crewbox {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.crew-caroussel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* width: 80%;
+  margin: 0 auto; */
+}
+
+.crew-member-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.crew-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-self: baseline;
+}
+
+.crew-tab {
+  background-color: #888;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.crew-tab-active {
+  background-color: #f1f1f1;
+}
+
+.crew-member-role {
+  font-family: "Bellefair";
+  font-weight: normal;
+  color: #888;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.crew-member-name {
+  font-family: "Bellefair";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.crew-member-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.crew-member-photo img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.crew-member-bio {
+  font-size: 1.2em;
+  line-height: 2;
+}

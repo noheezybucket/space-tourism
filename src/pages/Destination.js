@@ -6,8 +6,6 @@ const Destination = () => {
   const [toggle, setToggle] = useState(0);
   const destinations = data.destinations;
 
-  console.log(data);
-
   return (
     <div className="destination">
       <div className="destinationbox">

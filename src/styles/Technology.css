@@ -1,0 +1,13 @@
+.technology {
+  padding: 130px 0;
+  height: 100vh;
+  background: url("../assets/technology/background-technology-desktop.jpg")
+    no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.technologybox {
+  width: 90%;
+  margin: 0 auto;
+}
